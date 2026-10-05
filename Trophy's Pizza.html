@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trophy's Pizza | Fresh Pizza, Wings & More in San Angelo, TX</title>
+<meta name="description" content="Enjoy delicious, freshly made pizza, wings, pasta, calzones and more at Trophy's Pizza in San Angelo, TX. Order your favorites today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Figtree:wght@400;600;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Restaurant","name":"Trophy's Pizza","servesCuisine":"Pizza","url":"https://trophyspizza.net","telephone":"+1-325-947-7499","priceRange":"$10-20","address":{"@type":"PostalAddress","streetAddress":"4325 Southwest Blvd","addressLocality":"San Angelo","addressRegion":"TX","postalCode":"76904","addressCountry":"US"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.6","reviewCount":"509"}}</script>
+<style>
+:root{
+  --bg:#151110;--bg2:#1F1816;--ink:#FFF3DF;--muted:#C9B8A6;--red:#E23B2A;--gold:#FFC531;--on-gold:#151110;--line:rgba(255,243,223,.16);
+  box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:light){:root:not([data-theme="dark"]){--bg:#FFF6E6;--bg2:#FFFFFF;--ink:#241A16;--muted:#6A574A;--line:rgba(36,26,22,.18)}}
+:root[data-theme="light"]{--bg:#FFF6E6;--bg2:#FFFFFF;--ink:#241A16;--muted:#6A574A;--line:rgba(36,26,22,.18)}
+html{scroll-padding-top:calc(70px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Figtree,system-ui,sans-serif;line-height:1.6;overflow-x:hidden;padding-bottom:70px}
+h1,h2,h3{font-family:"Bowlby One",Impact,sans-serif;font-weight:400;line-height:1.05;margin:0;text-transform:uppercase}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+section{padding:84px 0}
+h2{font-size:clamp(1.9rem,5vw,3.1rem);margin-bottom:10px}
+.sub{color:var(--muted);max-width:36rem;margin:0 0 34px}
+
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:20px;height:68px}
+.logo{font-family:"Bowlby One";text-decoration:none;font-size:1.3rem;margin-right:auto;text-transform:uppercase}
+.logo b{color:var(--red)}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-weight:600}
+nav ul a{text-decoration:none}nav ul a:hover{color:var(--gold)}
+.burger{display:none;background:none;border:2px solid var(--line);color:var(--ink);border-radius:10px;width:44px;height:44px;font-size:1.3rem;cursor:pointer}
+.btn{display:inline-block;background:var(--red);color:#fff;font:800 1rem Figtree;letter-spacing:.04em;text-transform:uppercase;text-decoration:none;padding:15px 28px;border-radius:999px;border:2px solid var(--red);transition:transform .15s,box-shadow .15s;cursor:pointer}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 24px rgba(226,59,42,.45)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:var(--ink);box-shadow:none}
+.btn.ghost:hover{background:var(--ink);color:var(--bg)}
+.btn.sm{padding:10px 20px}
+@media(max-width:820px){.burger{display:block}nav ul{display:none;position:absolute;top:68px;left:0;right:0;flex-direction:column;background:var(--bg);padding:16px 22px;border-bottom:1px solid var(--line)}nav ul.open{display:flex}nav .btn.sm{padding:9px 16px}}
+
+/* hero */
+.hero{padding:60px 0 80px;position:relative;overflow:hidden;background:radial-gradient(60% 70% at 78% 40%,rgba(226,59,42,.35),transparent 70%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.5rem,7vw,5rem)}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{font-size:1.2rem;color:var(--muted);max-width:30rem;margin:22px 0 28px}
+.cta{display:flex;gap:14px;flex-wrap:wrap}
+.trust{margin-top:26px;font-weight:600;display:flex;gap:10px 18px;flex-wrap:wrap;font-size:.95rem}
+.trust .st{color:var(--gold)}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}}
+
+/* pizza art */
+.pz{position:relative;width:min(80vw,420px);aspect-ratio:1;border-radius:50%;margin:0 auto;background:radial-gradient(circle,#E9A94A 0 70%,#C9822A 72%);box-shadow:0 0 0 10px #A8661F,0 28px 60px rgba(0,0,0,.5);transition:transform .5s cubic-bezier(.3,1.4,.5,1)}
+.pz .l{position:absolute;border-radius:50%;inset:6%;opacity:0;transform:scale(.6);transition:all .5s}
+.pz .sauce{background:#C5301F}.pz .cheese{inset:9%;background:radial-gradient(circle at 40% 35%,#FFD566,#F2B33D);}
+.pz .on{opacity:1;transform:none}
+.pz .t{position:absolute;width:14%;height:14%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#E0442F,#A31D14);transform:translateY(-120%) scale(1.5);opacity:0;transition:transform .5s cubic-bezier(.3,1.6,.5,1),opacity .3s;transition-delay:calc(var(--k)*70ms)}
+.pz .t.s{background:#6B3A22;width:10%;height:10%}
+.pz .t.b{background:#D96B58;border-radius:30%;width:20%;height:6%}
+.pz .t.show{opacity:1;transform:rotate(var(--r,0deg))}
+.hero .pz{animation:floaty 5s ease-in-out infinite}
+@keyframes floaty{50%{transform:translateY(-12px) rotate(3deg)}}
+
+/* why */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:22px;padding:26px;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-8px);border-color:var(--gold)}
+.card .ic{font-size:2.2rem;display:block;margin-bottom:10px}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p{margin:0;color:var(--muted)}
+
+/* menu */
+.menu{background:var(--bg2)}
+.mgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:18px}
+.dish{background:var(--bg);border:1px solid var(--line);border-radius:22px;padding:22px;position:relative;overflow:hidden;transition:transform .25s}
+.dish:hover{transform:translateY(-6px) rotate(-.6deg)}
+.dish .em{font-size:2.4rem;display:inline-grid;place-items:center;width:68px;height:68px;border-radius:50%;background:rgba(255,197,49,.14);margin-bottom:12px}
+.dish h3{font-size:1.05rem;margin-bottom:6px}
+.dish p{margin:0 0 14px;color:var(--muted);font-size:.95rem}
+.dish a{color:var(--gold);font-weight:800;text-decoration:none;text-transform:uppercase;font-size:.85rem;letter-spacing:.05em}
+.dish a:hover{text-decoration:underline}
+.pop{position:absolute;top:14px;right:14px;background:var(--gold);color:var(--on-gold);font-weight:800;font-size:.72rem;padding:3px 10px;border-radius:99px;text-transform:uppercase}
+.more{margin-top:34px;font-weight:800;font-size:1.1rem}
+
+/* build */
+.build .wrap{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center}
+.steps{list-style:none;margin:0 0 28px;padding:0;display:grid;gap:10px}
+.steps button{width:100%;text-align:left;display:flex;gap:14px;align-items:center;font:600 1.05rem Figtree;color:var(--ink);background:var(--bg2);border:2px solid var(--line);border-radius:16px;padding:14px 18px;cursor:pointer;transition:border-color .2s,transform .2s}
+.steps button:hover{transform:translateX(6px)}
+.steps button.on{border-color:var(--gold)}
+.steps i{font-style:normal;font-family:"Bowlby One";width:36px;height:36px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;flex:none}
+@media(max-width:820px){.build .wrap{grid-template-columns:1fr}}
+
+/* reviews */
+.rev{background:var(--red);color:#fff}
+.rev .top{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-bottom:30px}
+.big{font-family:"Bowlby One";font-size:clamp(3.5rem,10vw,6rem);line-height:1}
+.rev .st{color:var(--gold);font-size:1.5rem;letter-spacing:3px}
+.rq{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.rq figure{margin:0;background:#fff;color:#241A16;border-radius:22px;padding:24px}
+.rq p{margin:0 0 12px;font-weight:600}
+.rq small{color:#6A574A}
+.themes{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.themes span{border:2px solid #fff;border-radius:99px;padding:4px 14px;font-weight:600;font-size:.9rem}
+
+/* about + contact */
+.about .wrap{max-width:760px}
+.about p{font-size:1.15rem;color:var(--muted)}
+.contact .box{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.box .card:hover{transform:none;border-color:var(--line)}
+.box dl{margin:0;display:grid;gap:16px}.box dt{font-weight:800}.box dd{margin:0;color:var(--muted)}
+.box dd a{color:var(--ink);font-weight:800}
+.final{background:radial-gradient(70% 90% at 50% 100%,rgba(226,59,42,.45),transparent 70%),var(--bg2);text-align:center}
+.final h2{font-size:clamp(2.2rem,6vw,4rem)}
+.final p{color:var(--muted);margin:0 auto 28px;max-width:30rem}
+.final .cta{justify-content:center}
+@media(max-width:760px){.contact .box{grid-template-columns:1fr}}
+
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:.93rem}
+footer .wrap{display:flex;gap:18px 40px;flex-wrap:wrap;justify-content:space-between}
+footer a{text-decoration:none;color:var(--ink)}footer a:hover{color:var(--gold)}
+
+.bar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--bg);border-top:1px solid var(--line);padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px));gap:8px}
+.bar a{flex:1;text-align:center;text-decoration:none;font-weight:800;padding:12px 6px;border-radius:12px;border:2px solid var(--line);font-size:.85rem;text-transform:uppercase}
+.bar a.o{flex:1.6;background:var(--red);border-color:var(--red);color:#fff}
+@media(max-width:820px){.bar{display:flex}}
+@media(min-width:821px){body{padding-bottom:0}}
+.rv{opacity:0;transform:translateY(24px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">Trophy's <b>Pizza</b></a>
+    <ul id="nav"><li><a href="#why">Home</a></li><li><a href="#menu">Menu</a></li><li><a href="#build">Build</a></li><li><a href="#about">About Us</a></li><li><a href="#reviews">Reviews</a></li><li><a href="#contact">Contact</a></li></ul>
+    <a class="btn sm" href="https://trophyspizza.net" target="_blank" rel="noopener">Order Now</a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false">☰</button>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <h1>Big flavor. <em>Fresh toppings.</em> Your perfect pizza.</h1>
+      <p class="lead">Freshly made pizzas, loaded with your favorite toppings and served by your friendly neighborhood pizza crew in San Angelo.</p>
+      <div class="cta"><a class="btn" href="https://trophyspizza.net" target="_blank" rel="noopener">Order Now</a><a class="btn ghost" href="#menu">View Menu</a></div>
+      <div class="trust"><span><span class="st">★★★★★</span> 4.6 Rating</span><span>500+ Reviews</span><span>San Angelo, TX</span></div>
+    </div>
+    <div class="pz" id="hp" role="img" aria-label="Pizza with pepperoni, sausage and bacon"></div>
+  </div>
+</header>
+
+<section id="why">
+  <div class="wrap rv">
+    <h2>Why San Angelo loves Trophy's</h2>
+    <p class="sub">Takeout and delivery pizza with a neighborhood feel.</p>
+    <div class="cards">
+      <div class="card"><span class="ic">🌿</span><h3>Fresh ingredients</h3><p>Quality ingredients and generous toppings in every pizza.</p></div>
+      <div class="card"><span class="ic">🔥</span><h3>Loaded with flavor</h3><p>From classic pepperoni to fully loaded specialty pies, every bite is packed.</p></div>
+      <div class="card"><span class="ic">🍕</span><h3>Made for you</h3><p>Customize your pizza with the toppings you love.</p></div>
+      <div class="card"><span class="ic">🤝</span><h3>Friendly local service</h3><p>A welcoming atmosphere and a crew that treats you like family.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap rv">
+    <h2>Fan favorites</h2>
+    <p class="sub">A taste of what's on the menu. Check the full menu and today's prices when you order.</p>
+    <div class="mgrid" id="mgrid"></div>
+    <p class="more"><a href="https://trophyspizza.net" target="_blank" rel="noopener">Hungry for more? Explore our full menu →</a></p>
+  </div>
+</section>
+
+<section class="build" id="build">
+  <div class="wrap">
+    <div class="rv">
+      <h2>Build your perfect pizza</h2>
+      <p class="sub">Tap each step and watch your pie come together.</p>
+      <ol class="steps" id="steps">
+        <li><button data-s="1"><i>1</i>Choose your size</button></li>
+        <li><button data-s="2"><i>2</i>Pick your sauce</button></li>
+        <li><button data-s="3"><i>3</i>Add your favorite cheese</button></li>
+        <li><button data-s="4"><i>4</i>Load it with toppings</button></li>
+        <li><button data-s="5"><i>5</i>Make it yours</button></li>
+      </ol>
+      <a class="btn" href="https://trophyspizza.net" target="_blank" rel="noopener">Start Your Order</a>
+    </div>
+    <div class="pz" id="bp" style="transform:scale(.7)" role="img" aria-label="Pizza being built"></div>
+  </div>
+</section>
+
+<section class="menu">
+  <div class="wrap rv">
+    <h2>Pizza, wings &amp; more</h2>
+    <div class="cards" style="margin-top:28px">
+      <div class="card"><span class="ic">🍕</span><h3>Pizza</h3><p>Fresh, cheesy pizzas loaded with your favorite toppings.</p><p><a href="https://trophyspizza.net" style="color:var(--gold);font-weight:800">Order →</a></p></div>
+      <div class="card"><span class="ic">🍗</span><h3>Wings</h3><p>Flavor-packed wings perfect for sharing.</p><p><a href="https://trophyspizza.net" style="color:var(--gold);font-weight:800">Order →</a></p></div>
+      <div class="card"><span class="ic">🍝</span><h3>More than pizza</h3><p>Calzones, pasta, meatballs, cheese sticks and more.</p><p><a href="https://trophyspizza.net" style="color:var(--gold);font-weight:800">Order →</a></p></div>
+    </div>
+  </div>
+</section>
+
+<section class="rev" id="reviews">
+  <div class="wrap rv">
+    <h2>Loved by San Angelo</h2>
+    <div class="top"><div class="big">4.6</div><div><div class="st">★★★★★</div><div>500+ Google reviews</div></div></div>
+    <div class="rq">
+      <figure><p>Customers call it their go-to neighborhood pizza spot, with friendly, respectful staff who treat you like family.</p><small>Paraphrased from a Google review by Keishara F.</small></figure>
+      <figure><p>One reviewer was impressed by the crust's perfect texture and slices loaded with toppings.</p><small>Paraphrased from a Google review by Louis W.</small></figure>
+      <figure><p>A first-timer ordered a simple large pepperoni and found it hot, super cheesy and delicious, with great service.</p><small>Paraphrased from a Google review by Ursula I.</small></figure>
+    </div>
+    <div class="themes"><span>Cheesy pizza</span><span>Crisp crust</span><span>Great wings</span><span>Calzones</span><span>Friendly staff</span><span>Reasonable prices</span><span>Easy takeout</span></div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap rv">
+    <h2>Your neighborhood pizza spot in San Angelo</h2>
+    <p>Trophy's Pizza is a friendly local pizzeria focused on delicious food, generous portions and great service. Pies come with unlimited toppings, alongside wings and pasta, and guests say the crew makes everyone feel welcome. Stop by for takeout, or have it delivered.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact" style="padding-top:0">
+  <div class="wrap rv">
+    <h2>Find &amp; call us</h2>
+    <div class="box" style="margin-top:24px">
+      <div class="card">
+        <dl>
+          <div><dt>Trophy's Pizza</dt><dd>4325 Southwest Blvd<br>San Angelo, TX 76904</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:+13259477499">+1 325-947-7499</a></dd></div>
+          <div><dt>Service</dt><dd>Takeout and delivery. Call or check our website for today's hours.</dd></div>
+        </dl>
+      </div>
+      <div class="card" style="display:flex;flex-direction:column;gap:14px;justify-content:center">
+        <a class="btn" href="https://trophyspizza.net" target="_blank" rel="noopener">Order Now</a>
+        <a class="btn ghost" href="tel:+13259477499">Call Now</a>
+        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Trophy%27s+Pizza+4325+Southwest+Blvd+San+Angelo+TX+76904" target="_blank" rel="noopener">Get Directions</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap rv">
+    <h2>Your next pizza night starts here.</h2>
+    <p>Grab your favorite pizza, load it with toppings, and make tonight delicious.</p>
+    <div class="cta"><a class="btn" href="https://trophyspizza.net" target="_blank" rel="noopener">Order Now</a><a class="btn ghost" href="#menu">View Menu</a></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><strong>Trophy's Pizza</strong><br>Fresh pizza, wings &amp; more in San Angelo, TX.<br>4325 Southwest Blvd, San Angelo, TX 76904<br><a href="tel:+13259477499">+1 325-947-7499</a></div>
+    <div><a href="#menu">Menu</a><br><a href="https://trophyspizza.net" target="_blank" rel="noopener">Order Now</a><br><a href="#reviews">Google Reviews</a><br><a href="#contact">Contact</a></div>
+    <div>© Trophy's Pizza. All Rights Reserved.</div>
+  </div>
+</footer>
+
+<div class="bar"><a href="tel:+13259477499">Call</a><a href="https://www.google.com/maps/search/?api=1&query=Trophy%27s+Pizza+4325+Southwest+Blvd+San+Angelo+TX+76904" target="_blank" rel="noopener">Directions</a><a class="o" href="https://trophyspizza.net" target="_blank" rel="noopener">Order Now</a></div>
+
+<script>
+(function(){
+  var P=[[50,24,0],[72,38,1],[70,64,2],[48,76,3],[28,62,4],[27,38,5],[50,50,6]],
+      S=[[40,32,7],[62,30,8],[78,52,9],[38,66,10],[60,72,11]],
+      B=[[34,50,12],[64,46,13],[50,64,14]];
+  function top(pz,list,cls,show){
+    list.forEach(function(a){var d=document.createElement("div");d.className="t "+cls+(show?" show":"");
+      d.style.left=a[0]+"%";d.style.top=a[1]+"%";d.style.marginLeft="-7%";d.style.marginTop="-7%";
+      d.style.setProperty("--k",a[2]);d.style.setProperty("--r",(a[2]*47)+"deg");pz.appendChild(d)});
+  }
+  function layers(pz){["sauce","cheese"].forEach(function(c){var l=document.createElement("div");l.className="l "+c;pz.appendChild(l)})}
+  var hp=document.getElementById("hp");layers(hp);hp.children[0].classList.add("on");hp.children[1].classList.add("on");
+  top(hp,P,"",0);top(hp,S,"s",0);top(hp,B,"b",0);
+  setTimeout(function(){hp.querySelectorAll(".t").forEach(function(t){t.classList.add("show")})},300);
+
+  var bp=document.getElementById("bp");layers(bp);top(bp,P,"",0);top(bp,S,"s",0);top(bp,B,"b",0);
+  var btn=document.querySelectorAll("#steps button");
+  function set(n){
+    btn.forEach(function(b){b.classList.toggle("on",+b.dataset.s<=n)});
+    bp.style.transform="scale("+(.7+.06*Math.min(n,2))+")";
+    bp.children[0].classList.toggle("on",n>=2);bp.children[1].classList.toggle("on",n>=3);
+    bp.querySelectorAll(".t:not(.s):not(.b)").forEach(function(t){t.classList.toggle("show",n>=4)});
+    bp.querySelectorAll(".t.s,.t.b").forEach(function(t){t.classList.toggle("show",n>=5)});
+  }
+  btn.forEach(function(b){b.addEventListener("click",function(){set(+b.dataset.s)})});
+  set(0);
+
+  var items=[["🥓","Super Supreme with Bacon & Sausage","Loaded up with bacon, sausage and more.",1],["🍕","Pepperoni Pizza","The classic, hot and super cheesy.",1],["🥩","Sausage, Pepperoni & Bacon","Three meaty favorites on one pie."],["🍍","Hawaiian Pizza","Sweet and savory, a crowd favorite."],["🍝","Meatball Pizza","Hearty meatballs on a cheesy pie."],["🍗","BBQ Chicken Pizza","Tangy BBQ with tender chicken."],["🥘","Deep Dish Meatballs","Warm, saucy and satisfying."],["🥖","Meatball Marinara","A hot, hearty meatball sandwich."],["🧀","Cheese Sticks","Golden, gooey and made for sharing."],["🍗","Wings","Flavor-packed and perfect to share."],["🥟","Calzones","A guest favorite, stuffed and baked."],["🍝","Pasta","Italian-American comfort, ready for takeout."]];
+  var g=document.getElementById("mgrid");
+  items.forEach(function(i){var d=document.createElement("div");d.className="dish";
+    d.innerHTML=(i[3]?'<span class="pop">Popular</span>':'')+'<span class="em" aria-hidden="true">'+i[0]+'</span><h3>'+i[1]+'</h3><p>'+i[2]+'</p><a href="https://trophyspizza.net" target="_blank" rel="noopener">Order now →</a>';g.appendChild(d)});
+
+  var bg=document.getElementById("burger"),nv=document.getElementById("nav");
+  bg.addEventListener("click",function(){var o=nv.classList.toggle("open");bg.setAttribute("aria-expanded",o)});
+  nv.addEventListener("click",function(e){if(e.target.tagName==="A"){nv.classList.remove("open");bg.setAttribute("aria-expanded",false)}});
+
+  var rv=document.querySelectorAll(".rv");
+  if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.12});rv.forEach(function(r){io.observe(r)})}
+  else rv.forEach(function(r){r.classList.add("in")});
+})();
+</script>
+</body>
+</html>
